@@ -1,9 +1,33 @@
 class CocktailsController < ApplicationController
+  before_action :set_cocktail, only: [:show]
+    # :edit, :update, :destroy]
   def index
-    @cocktails = Cocktails.all
+    @cocktails = Cocktail.all
   end
 
-  # def show
-  #   @cocktail=Cocktail.find()
-  # end
+  def show
+  end
+
+  def new
+    @cocktail = Cocktail.new
+  end
+
+  def create
+    @cocktail = Cocktail.new(cocktails_params)
+    if @cocktail.save
+      redirect_to @cocktail, notice: 'Cocktail was successfully created.'
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def set_cocktail
+    @cocktail = Cocktail.find(params[:id])
+  end
+
+  def cocktails_params
+    params.require(:cocktail).permit(:name)
+  end
 end
