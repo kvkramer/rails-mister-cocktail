@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Cleaning database..."
 Cocktail.destroy_all
+Ingredient.destroy_all
 
 puts "Creating cocktail ingredients..."
 # dishoom = { name: "Dishoom", address: "7 Boundary St, London E2 7JE", stars: 5 }
@@ -15,8 +16,6 @@ puts "Creating cocktail ingredients..."
 # [ dishoom, pizza_east ].each do |attributes|
 #   restaurant = Restaurant.create!(attributes)
 #   puts "Created #{restaurant.name}"
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Old Fashioned")
 
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")

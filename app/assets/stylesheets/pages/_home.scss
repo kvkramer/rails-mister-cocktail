@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+
+.cards {
+  display: flex,
+}
+
+.card-cocktail {
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 100px;
+  height: 200px;
+  width: 300px;
+}

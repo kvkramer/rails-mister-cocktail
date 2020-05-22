@@ -1,8 +1,13 @@
-<h1>📝 Create a new coctail </h1>
+<div class="banner">
+  <h1>📝 Create a new coctail </h1>
+  <%= cl_image_tag("fra0v2b29elip4whik0i",
+      width: 800, height: 300, crop: :fill) %>
+</div>
 
 <%= simple_form_for(@cocktail) do |f| %>
 <div class="form-inputs">
     <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
   </div>
 
   <div class="form-actions">
