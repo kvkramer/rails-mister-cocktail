@@ -23,5 +23,12 @@ Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 Ingredient.create(name: "sugar")
 Ingredient.create(name: "Rum")
+Ingredient.create(name: "Aperol")
+Ingredient.create(name: "Wine")
+Ingredient.create(name: "Water")
+Ingredient.create(name: "Stawberry")
+Ingredient.create(name: "Gin")
+Ingredient.create(name: "Ginger Ale")
+Ingredient.create(name: "Tonic")
 # end
 puts "Finished!"
