@@ -1,5 +1,5 @@
     <% if @cocktail.photo.attached? %>
-      <div class="banner" style="background-image: <%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>">
+      <div class="banner"style="background-image: url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 1200, crop: :fill %>')">
     <% else %>
       <div class="banner" style="background-image: url('<%= cl_image_path "fra0v2b29elip4whik0i", width: 800, height: 300, crop: :fill %>')">
     <% end %>
